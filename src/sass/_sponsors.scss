@@ -1,0 +1,36 @@
+.sponsors{
+    &-grid{
+        display: grid;
+        grid-row-gap: 1em;
+        &__item{
+            text-align: center;
+            margin: 1em 0;
+        }
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    .sponsors{
+        &-grid{
+            width: 85%;
+            grid-template-columns: repeat(5,20%);
+            grid-column-gap: 1em;
+            grid-row-gap: 0;
+            justify-content: center;
+
+            &__item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__img{
+                max-width: 100%;
+                &-mxw{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

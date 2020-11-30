@@ -1,0 +1,53 @@
+.workflow{
+    &__title,&__paragraph,&__subtitle,&__subparagraph{
+        text-align: center;
+    }
+
+    &__title,&__subtitle{
+        color: $Dark-Grayish-Blue;
+    }
+    &__paragraph,&__subparagraph{
+        color: $Grayish-Blue;
+        line-height: 25px;
+    }
+
+    &-grid{
+        margin: 6em auto;
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__item{
+            margin: 1.5em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__subtitle,&__subparagraph{
+        margin: 0;
+    }
+    &__subtitle{
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .workflow{
+        &-grid{
+            margin: 2em auto;
+            width: 85%;
+            grid-template-columns: repeat(3,33.3%);
+            align-content: center;
+
+            &__item{
+                justify-content: center;
+            }
+        }
+        &__subparagraph{
+            font-size: .8em;
+        }
+    }
+}

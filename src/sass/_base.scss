@@ -1,0 +1,24 @@
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+    min-width: 360px;
+
+    background-color: $White;
+    background-image: url('/assets/img/background/bg-header-mobile.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box-container{
+    margin-top: 6em;
+    display: grid;
+    grid-row-gap: 3em;
+}
+
+@media screen and (min-width:1024px){
+    body{
+        background-image: url(('/assets/img/background/bg-header-desktop.png'));
+    }
+}

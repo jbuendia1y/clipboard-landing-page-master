@@ -1,0 +1,42 @@
+.download{
+    &__title,&__paragraph{
+        text-align: center;
+        margin: 0;
+    }
+
+    &__title{
+        color: $Dark-Grayish-Blue
+    }
+
+    &__paragraph{
+        color: $Grayish-Blue;
+        margin: 1em 0;
+        line-height: 25px;
+    }
+
+    &__links{
+        margin-top: 2em;
+    }
+
+    &__button{
+        @include button;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .download{
+        margin-top: 5em;
+        &__links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__button{
+            margin: 0 .5em;
+            &:nth-child(1){
+                margin-bottom: 0;
+            }
+        }
+    }
+}

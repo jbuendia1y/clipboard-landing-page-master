@@ -1,0 +1,58 @@
+.header{
+    margin-bottom: 3em;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img{
+        margin-bottom: 2.5em;
+        &-mxw{
+            max-width: 70%;
+        }
+    }
+
+    &__title,&__paragraph{
+        padding: 0 .5em;
+    }
+
+    &__title{
+        font-size: 1.6em;
+        color: $Dark-Grayish-Blue;
+        margin: 0;
+    }
+    &__paragraph{
+        font-size: .9em;
+        line-height: 25px;
+        color: $Grayish-Blue;
+    }
+
+    &__links{
+        margin-top: 1.5em;
+        width: 100%;
+    }
+    &__button{
+        @include button;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .header{
+        &__links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__button{
+            margin: .5em;
+            &:nth-child(1){
+                margin-bottom: 0;
+            }
+            &:nth-child(2){
+                margin-bottom: 0;
+            }
+        }
+    }
+}

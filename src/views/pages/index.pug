@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon",type="image/png",sizes="32x32",href="./images/favicon-32x32.png")
+
+        link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+
+        link(rel="preconnect",href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap",rel="stylesheet")
+
+        link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.15.1/css/all.css",integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp",crossorigin="anonymous")
+
+        link(rel="stylesheet", href="css/styles.css")
+
+        title Frontend Mentor | Clipboard landing page
+    body
+        .box-container
+            header.header
+                .container.header__box
+                    .header__img
+                        img(src="assets/img/icons/logo.svg", alt="logo").header__img-mxw
+                    h1.header__title  A history of everything you copy
+                    p.header__paragraph   Clipboard allows you to track and organize everything you 
+                        |   copy. Instantly access your clipboard on all your devices.
+                    .header__links
+                        a(href="#").header__button Download for iOS
+                        a(href="#").header__button Download for Mac
+            section.features
+                .container.features__text
+                    h2.features__title  Keep track of your snippets
+                    p.features__paragraph   Clipboard instantly stores any item you copy in the cloud, 
+                        |   meaning you can access your snippets immediately on all your 
+                        |   devices. Our Mac and iOS apps will help you organize everything.
+                .container.features__box
+                    .features__img
+                        img(src="assets/img/image-computer.png", alt="apple computer").features__img-mxw
+                    .features__list
+                        .features__item
+                            h3.features__subtitle  Quick Search
+                            p.features__subparagraph     Easily search your snippets by content, category, web address, application, and more.
+                        .features__item
+                            h3.features__subtitle  iCloud Sync
+                            p.features__subparagraph   Instantly saves and syncs snippets across all your devices.
+                        .features__item
+                            h3.features__subtitle  Complete History
+                            p.features__subparagraph   Retrieve any snippets from the first moment you started using the app.
+
+            section.access
+                .container
+                    h2.access__title  Access Clipboard anywhere
+                    p.access__paragraph   Whether you’re on the go, or at your computer, you can access all your Clipboard 
+                        |   snippets in a few simple clicks.
+                    .access__img
+                        img(src="assets/img/image-devices.png", alt="devices").access__img-mxw
+
+            section.workflow
+                .container.workflow__text
+                    h2.workflow__title  Supercharge your workflow
+                    p.workflow__paragraph   We’ve got the tools to boost your productivity.
+                .container.workflow-grid
+                    .workflow-grid__item
+                        .workflow-grid__img
+                            img(src="assets/img/icons/icon-blacklist.svg", alt="icon-blacklist").workflow__img-mxw
+                        h3.workflow__subtitle Create blacklists
+                        p.workflow__subparagraph Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+                    .workflow-grid__item
+                        .workflow-grid__img
+                            img(src="assets/img/icons/icon-text.svg", alt="icon-text").workflow__img-mxw
+                        h3.workflow__subtitle Plain text snippets
+                        p.workflow__subparagraph Remove unwanted formatting from copied text for a consistent look.
+                    .workflow-grid__item
+                        .workflow-grid__img
+                            img(src="assets/img/icons/icon-preview.svg", alt="icon-preview").workflow__img-mxw
+                        h3.workflow__subtitle Sneak preview
+                        p.workflow__subparagraph Quick preview of all snippets on your Clipboard for easy access.
+            
+            section.sponsors
+                .container.sponsors-grid
+                    .sponsors-grid__item
+                        .sponsors-grid__img
+                            img(src="assets/img/logo-google.png", alt="logo-google").sponsors__img-mxw
+
+                    .sponsors-grid__item
+                        .sponsors-grid__img
+                            img(src="assets/img/logo-ibm.png", alt="logo-ibm").sponsors__img-mxw
+
+                    .sponsors-grid__item
+                        .sponsors-grid__img
+                            img(src="assets/img/logo-microsoft.png", alt="logo-microsoft").sponsors__img-mxw        
+
+                    .sponsors-grid__item
+                        .sponsors-grid__img
+                            img(src="assets/img/logo-hp.png", alt="logo-hp").sponsors__img-mxw                    
+
+                    .sponsors-grid__item
+                        .sponsors-grid__img
+                            img(src="assets/img/logo-vector-graphics.png", alt="logo-vector-graphics").sponsors__img-mxw                    
+
+            section.download
+                .container
+                    h2.download__title  Clipboard for iOS and Mac OS
+                    p.download__paragraph   Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+                        |   and you’re ready to start adding to your clipboard.
+                    .download__links
+                        a(href="#").download__button Download for iOS
+                        a(href="#").download__button Download for Mac
+
+            footer.footer
+                .container.footer__box
+                    .footer__logo
+                        img(src="assets/img/icons/logo.svg", alt="logo").footer__logo-mxw
+                    .footer__links
+                        a(href="#").footer__link FAQs
+                        a(href="#").footer__link Contact Us
+                        a(href="#").footer__link Privacy Policy
+                        a(href="#").footer__link Press Kit
+                        a(href="#").footer__link Install Guide
+                    .footer__socials
+                        a(href="#").footer__img
+                            i.fab.fa-facebook-square.fa-2x.footer__img-mxw
+                        a(href="#").footer__img
+                            i.fab.fa-twitter.fa-2x.footer__img-mxw
+                        a(href="#").footer__img
+                            i.fab.fa-instagram.fa-2x.footer__img-mxw
