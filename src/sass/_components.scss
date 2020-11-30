@@ -15,6 +15,13 @@
     &:nth-child(2){
         background-color: $Light-Blue;
     }
+
+    @media screen and (min-width:1024px){
+        transition: all .5s;
+        &:hover{
+            opacity: .5;
+        }
+    }
 }
 
 .container{
@@ -25,5 +32,11 @@
 @media screen and (min-width:1024px){
     .container{
         width: 60%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .container{
+        width: 50%;
     }
 }

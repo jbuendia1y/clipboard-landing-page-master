@@ -46,8 +46,35 @@
                 justify-content: center;
             }
         }
+
+        &__title{
+            font-size: 1.8em;
+        }
         &__subparagraph{
             font-size: .8em;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .workflow{
+        &__title{
+            font-size: 1.8em;
+        }
+        &__paragraph{
+            font-size: 1em;
+        }
+
+        &__text{
+            margin-bottom: 2.5em;
+        }
+
+        &__subtitle{
+            font-size: 1.5em;
+        }
+        &__subparagraph{
+            font-size: .9em;
+            padding: 0 2em;
         }
     }
 }

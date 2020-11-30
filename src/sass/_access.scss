@@ -26,3 +26,26 @@
         }
     }
 }
+
+@media screen and (min-width:1240px){
+    .access{
+        &__paragraph{
+            padding: 0 2em;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .access{
+        margin-top: 6em;
+        &__title{
+            font-size: 1.8em;
+        }
+        &__paragraph{
+            font-size: 1em;
+        }
+        &__img{
+            margin-top: 4em;
+        }
+    }
+}
